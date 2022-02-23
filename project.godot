@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Auto",
+"language": "GDScript",
+"path": "res://auto/auto.gd"
+}, {
+"base": "Reference",
+"class": "LinearTransition",
+"language": "GDScript",
+"path": "res://auto/linear_transition.gd"
+}, {
+"base": "Reference",
+"class": "PercentTransition",
+"language": "GDScript",
+"path": "res://auto/percent_transition.gd"
+} ]
+_global_script_class_icons={
+"Auto": "",
+"LinearTransition": "",
+"PercentTransition": ""
+}
+
+[application]
+
+config/name="auto"
+run/main_scene="res://test.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
